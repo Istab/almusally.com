@@ -21,6 +21,61 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <!-- Valentines Day style -->
+    <style>
+      .heart {
+        position: absolute;
+        top: -50%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -m-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+      }
+
+      .heart:before {
+          position: absolute;
+          top: -50%;
+          left: 0;
+          display: block;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: inherit;
+          border-radius: 100%;
+      }
+
+      .heart:after {
+          position: absolute;
+          top: 0;
+          right: -50%;
+          display: block;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: inherit;
+          border-radius: 100%;
+      }
+
+      @-webkit-keyframes love {
+        0%{top:110%}
+      }
+      @-moz-keyframes love {
+        0%{top:110%}
+      }
+      @-ms-keyframes love {
+        0%{top:110%}
+      }
+      @keyframes love {
+        0%{top:110%}
+      }
+      
+      #valentines-modal .modal-content {
+          background-color: pink;
+          min-height: 600px;
+        background: pink url("../img/flowers.png”) no-repeat bottom left scroll;
+          background-size: 25%;
+      }
+    </style>
   </head>
 
   <body id="page-top">
@@ -150,6 +205,25 @@
       </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="valentines-modal" tabindex="-1" role="dialog" aria-labelledby="Valentines Modal" style="display: block; padding-left: 0px;">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h5>Happy Valentines Day</h5>
+            <p>Even though we don't get to be with each other as much as we'd like...</p>
+            <p>In the morning... in the night...</p>
+            <p>you are always on my mind</p>
+            <br><br><br><br>
+            <p class="pull-right text-danger">I love you</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <div class="container text-center">
@@ -166,6 +240,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 
