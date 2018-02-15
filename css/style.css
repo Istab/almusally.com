@@ -47,6 +47,6 @@
 #valentines-modal .modal-content {
     background-color: pink;
     min-height: 600px;
-  background: pink url("../img/flowers.png”) no-repeat bottom left scroll;
+  background: pink url("../img/flowers.png") no-repeat bottom left scroll;
     background-size: 25%;
 }
